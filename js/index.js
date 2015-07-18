@@ -8,8 +8,8 @@ $(document).ready(function() {
 
 
         var tnAPI = "https://s3.amazonaws.com/intern-coding-challenge/counts.json";
-        var icons = $(this).text(tnAPI);
-
+        var icons = $(this).text();
+        
 
         function displayIcon(data) {
             //tn is TomNod
