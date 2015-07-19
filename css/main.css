@@ -54,7 +54,7 @@ body {
         clear: both;
         display: block;
         overflow: hidden;
-        visibility: hidden;
+        /*visibility: hidden;*/
         width: 0;
         height: 0;
     }
@@ -65,7 +65,7 @@ body {
         content: ".";
         display: block;
         overflow: hidden;
-        visibility: hidden;
+        /*visibility: hidden;*/
         font-size: 0;
         line-height: 0;
         width: 0;
@@ -115,7 +115,7 @@ body {
         content: ".";
         display: block;
         overflow: hidden;
-        visibility: hidden;
+        /*visibility: hidden;*/
         font-size: 0;
         line-height: 0;
         width: 0;
@@ -1825,7 +1825,7 @@ a:hover {
 ul li {
     margin: 15px 0 0;
     font-size: 1.6em;
-    color: #8d9aa5;
+    color: #8246a5;
     position: relative;
 }
 
@@ -2045,4 +2045,14 @@ footer p {
 
 input[type=search] {
     font-size: 2em;
+}
+element.style {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    left: 0px;
+    top: -100px;
+}
+.button{
+
 }
