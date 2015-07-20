@@ -1,7 +1,20 @@
  $(document).ready(function(){
-     $(window).load(function(){ data(); });
+     $(window).load(function(){ data();
+     });
  });
 
+ function data (){
+
+     var tnAPI="https://s3.amazonaws.com/intern-coding-challenge/counts.json";
+     jQuery.ajax({
+         url:tnAPI,
+         dataType:"json"
+ });
+     var tags = data.tags;
+     var clusters = data.clusters;
+     var names = function(clusters.name, tags.name)
+ };
+     
 
 
 
