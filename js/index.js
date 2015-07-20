@@ -19,10 +19,23 @@
              var tags = data.tags;
              var clusters = data.clusters;
 
-         // html  div elements just to get data on html
-             $("#tags")
-             $("#tags1")
-             $("#tags2")
+         // html  div elements just to get data on html...
+
+          //   "Name"
+                //swimming pool
+             $("#tags").append("<div>" + tags[0].name +"</div>");
+
+             //tennis court
+             $("#tags").append("<div>" + tags[1].name +"</div>");
+
+             //soccer field
+             $("#tags").append("<div>" + tags[2].name +"</div>");
+
+
+
+             
+
+
 
 
          });
