@@ -3,19 +3,31 @@
      });
  });
 
- function data (){
+ function data () {
 
-     var tnAPI="https://s3.amazonaws.com/intern-coding-challenge/counts.json";
+     //tomnod url
+     var tnAPI = "https://s3.amazonaws.com/intern-coding-challenge/counts.json";
+
+     //calling ajax to place  json data
      jQuery.ajax({
-         url:tnAPI,
-         dataType:"json"
- });
-     var tags = data.tags;
-     var clusters = data.clusters;
-     var names = function(clusters.name, tags.name)
- };
-     
+         url: tnAPI,
+         dataType: "json"
+     })
 
+         //turn data groups (tags and clusters in variables
+         .done(function (data) {
+             var tags = data.tags;
+             var clusters = data.clusters;
+
+         // html  div elements just to get data on html
+             $("#tags")
+             $("#tags1")
+             $("#tags2")
+
+
+         });
+
+ }
 
 
 
