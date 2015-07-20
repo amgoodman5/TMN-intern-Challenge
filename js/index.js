@@ -2,7 +2,7 @@
      $(window).load(function(){ data();
      });
  });
-
+ //  function to get data from json
  function data () {
 
      //tomnod url
@@ -16,24 +16,31 @@
 
          //turn data groups (tags and clusters in variables
          .done(function (data) {
-             var tags = data.tags;
-             var clusters = data.clusters;
+             var tags = (data.tags);
+             var clusters = (data.clusters);
 
          // html  div elements just to get data on html...
 
           //   "Name"
                 //swimming pool
              $("#tags").append("<div>" + tags[0].name +"</div>");
+             $("#tags").append("<div>" + tags[0].count +"</div>");
+             $("#tags").append("<div>" + tags[0].icon_url +"</div>");
+
 
              //tennis court
              $("#tags").append("<div>" + tags[1].name +"</div>");
+             $("#tags").append("<div>" + tags[1].count +"</div>");
+             $("#tags").append("<div>" + tags[1].icon_url +"</div>");
 
              //soccer field
              $("#tags").append("<div>" + tags[2].name +"</div>");
+             $("#tags").append("<div>" + tags[2].count +"</div>");
+             $("#tags").append("<div>" + tags[2].icon_url +"</div>");
 
 
 
-             
+
 
 
 
