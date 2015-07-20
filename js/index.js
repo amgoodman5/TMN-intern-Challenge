@@ -1,5 +1,6 @@
  $(document).ready(function(){
-     $(window).load(function(){ data(); });});
+     $(window).load(function(){ data(); });
+ });
 
 
 
