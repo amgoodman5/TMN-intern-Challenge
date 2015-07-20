@@ -1,27 +1,90 @@
 <!DOCTYPE html>
 <html>
+<!DOCTYPE html>
+<html lang="en" class="demo-1 no-js">
 <head>
-    <meta charset="utf-8">
-    <title>TomNod API Call</title>
-    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/main.css">
-
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Internship Challenge</title>
+    <meta name="description" content= TomNod Api
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <script src="js/snap.svg-min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/index.js"></script>
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 </head>
 <body>
+<div class="container">
+    <!-- Top Navigation -->
 
-            <div id="tags">
-            </div>
-            <div id="tags1">
-            </div>
-            <div id ="tags2">
-            </div>
+    <section id="grid" class="grid clearfix">
+        <a href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+            <figure>
+                <img src="img/swimming-pool-blue-water.jpg" />
+                <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+                <figcaption>
+                    <h2 id = "tags"></h2>
+                    <p id="tags"></p>
+                </figcaption>
+            </figure>
+        </a>
+        <a href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+            <figure>
+                <img src="img/images.jpeg" />
+                <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+                <figcaption>
+                    <h2 id = "tags1"></h2>
+                    <p id="tags1"></p>
+
+                </figcaption>
+            </figure>
+        </a>
+        <a href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+            <figure>
+                <img src="img/soccer.jpeg" />
+                <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+                <figcaption>
+                    <h2 id = "tags2"></h2>
+                    <p id="tag2"></p>
+
+                </figcaption>
+            </figure>
+        </a>
 
 
 
 </body>
+</html> <script>
+    (function() {
 
+        function init() {
+            var speed = 250,
+                    easing = mina.easeinout;
 
-</html>
-<script src="js/jquery.js"></script>
-<script src="js/index.js"></script>
-<script src="js/package.json"></script>
+            [].slice.call ( document.querySelectorAll( '#grid > a' ) ).forEach( function( el ) {
+                var s = Snap( el.querySelector( 'svg' ) ), path = s.select( 'path' ),
+                        pathConfig = {
+                            from : path.attr( 'd' ),
+                            to : el.getAttribute( 'data-path-hover' )
+                        };
+
+                el.addEventListener( 'mouseenter', function() {
+                    path.animate( { 'path' : pathConfig.to }, speed, easing );
+                } );
+
+                el.addEventListener( 'mouseleave', function() {
+                    path.animate( { 'path' : pathConfig.from }, speed, easing );
+                } );
+            } );
+        }
+
+        init();
+
+    })();
+</script>

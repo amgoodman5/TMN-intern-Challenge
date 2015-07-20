@@ -1,60 +1,53 @@
- $(document).ready(function(){
-     $(window).load(function(){ data();
-     });
- });
- //  function to get data from json
- function data () {
+$(document).ready(function(){
+    $(window).load(function(){ data();
+    });
+});
+//  function to get data from json
+function data () {
 
-     //tomnod url
-     var tnAPI = "https://s3.amazonaws.com/intern-coding-challenge/counts.json";
+    //tomnod url
+    var tnAPI = "https://s3.amazonaws.com/intern-coding-challenge/counts.json";
 
-     //calling ajax to place  json data
-     jQuery.ajax({
-         url: tnAPI,
-         dataType: "json"
-     })
+    //calling ajax to place  json data
+    jQuery.ajax({
+        url: tnAPI,
+        dataType: "json"
+    })
 
-         //turn data groups (tags and clusters in variables
-         .done(function (data) {
-             var tags = (data.tags);
-             var clusters = (data.clusters);
+        //turn data groups (tags and clusters in variables
+        .done(function (data) {
+            var tags = (data.tags);
+            //var clusters = (data.clusters);
 
-         // html  div elements just to get data on html...
+            // html  div elements just to get data on html...
 
-          //   "Name"
-                //swimming pool
-             $("#tags").append("<div>" + tags[0].name +"</div>");
-             $("#tags").append("<div>" + tags[0].count +"</div>");
-             $("#tags").append("<div>" + tags[0].icon_url +"</div>");
+            //   "Name"
+            //swimming pool
+            $("#tags").append("<h2>" + tags[0].name + "</h2>");
 
-
-             //tennis court
-             $("#tags").append("<div>" + tags[1].name +"</div>");
-             $("#tags").append("<div>" + tags[1].count +"</div>");
-             $("#tags").append("<div>" + tags[1].icon_url +"</div>");
-
-             //soccer field
-             $("#tags").append("<div>" + tags[2].name +"</div>");
-             $("#tags").append("<div>" + tags[2].count +"</div>");
-             $("#tags").append("<div>" + tags[2].icon_url +"</div>");
+            //counts
+            $("#tags").append("<p>" + tags[0].count + "</p>");
+            //$("#tags").append("<div>" + tags[0].icon_url + "</div>");
 
 
+            //tennis court
+            $("#tags1").append("<h2>" + tags[1].name + "</h2>");
 
+            //counts
+            $("#tags1").append("<p>" + tags[1].count + "</p>");
+            //$("#tags").append("<div>" + tags[1].icon_url + "</div>");
+            //
+            //soccer field
+            $("#tags2").append("<h2>" + tags[2].name + "</h2>");
 
+            //counts
+            $("#tags2").append("<p>" + tags[2].count + "</p>");
+            //$("#tags").append("<div>" + tags[2].icon_url + "</div>");
 
-
-
-
-         });
-
- }
-
-
-
-
-
- /**
-  //{
+        })
+}
+/**
+ //{
   "name": "TomNod API",
   "version": "0.0.1"
 
@@ -116,5 +109,32 @@
 "status": 1,
 "msg": "Counted 0 taggers in last 5 minutes"
 }
-  * Created by AaronG on 7/19/2015.
-  */
+ * Created by AaronG on 7/19/2015.
+ */
+
+(function() {
+
+    function init() {
+        var speed = 250,
+            easing = mina.easeinout;
+
+        [].slice.call ( document.querySelectorAll( '#grid > a' ) ).forEach( function( el ) {
+            var s = Snap( el.querySelector( 'svg' ) ), path = s.select( 'path' ),
+                pathConfig = {
+                    from : path.attr( 'd' ),
+                    to : el.getAttribute( 'data-path-hover' )
+                };
+
+            el.addEventListener( 'mouseenter', function() {
+                path.animate( { 'path' : pathConfig.to }, speed, easing );
+            } );
+
+            el.addEventListener( 'mouseleave', function() {
+                path.animate( { 'path' : pathConfig.from }, speed, easing );
+            } );
+        } );
+    }
+
+    init();
+
+})();
