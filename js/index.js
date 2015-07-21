@@ -26,7 +26,7 @@ function data () {
             $("#tags").append("<h3>" + tags[0].name + "</h3>");
 
             //counts
-            $("#tags").append("<p>" + tags[0].count + "</p>");
+            $("#tags").append("<p>" + tags[0].count +":" + "tags" + "</p>");
             //$("#tags").append("<div>" + tags[0].icon_url + "</div>");
 
 
@@ -34,14 +34,14 @@ function data () {
             $("#tags1").append("<h2>" + tags[1].name + "</h2>");
 
             //counts
-            $("#tags1").append("<p>" + tags[1].count + "</p>");
+            $("#tags1").append("<p>" + tags[1].count +":" + "tags" + "</p>");
             //$("#tags").append("<div>" + tags[1].icon_url + "</div>");
             //
             //soccer field
             $("#tags2").append("<h2>" + tags[2].name + "</h2>");
 
             //counts
-            $("#tags2").append("<p>" + tags[2].count + "</p>");
+            $("#tags2").append("<p>" + tags[2].count +":" + "tags" + "</p>");
             //$("#tags").append("<div>" + tags[2].icon_url + "</div>");
 
         })
