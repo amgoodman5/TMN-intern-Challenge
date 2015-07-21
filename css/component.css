@@ -9,21 +9,36 @@
 	float: left;
 	max-width: 250px;
 	width: 25%;
-	color: #595241;
+
 }
 
 .grid a:nth-child(odd) {
-	margin: 30px 0 -30px 0;
+	margin: -40px 0 -30px 0;
 }
 
 .grid figure {
 	position: relative;
 	overflow: hidden;
-	margin: 5px;
-	background: #29D9C2;
+	margin: 12px;
+
+    box-shadow: 3px 1px 9px #FFFFFF;
 }
 .img{
-    height:
+    color: green;
+}
+h1{
+    font-family: 'Roboto', sans-serif;
+    margin: 0 0 20px 0;
+    color: #86F233;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 2em;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+   text-shadow: 2px 5px 4px black;
+
+
 }
 .grid figure img {
 	position: relative;
@@ -32,25 +47,28 @@
 	opacity: 0.7;
 	-webkit-transition: opacity 0.3s;
 	transition: opacity 0.3s;
+    box-shadow: 10px 10px 5px #888888;
+
 }
 
 .grid figcaption {
 	position: absolute;
 	top: 0;
 	z-index: 11;
-	padding: 10px;
+	padding: 0px;
 	width: 100%;
 	height: 100%;
 	text-align: center;
-    box-shadow: 10px 10px 5px #888888;
+    box-shadow: 10px 10px 5px #85A5CC;
 }
 
 .grid figcaption h2,h3{
+    font-family: 'Roboto', sans-serif;
 	margin: 0 0 20px 0;
-	color: #01A2A6;
+	color: #00B588;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	font-weight: 300;
+	font-weight: 500;
 	font-size: 120%;
 	-webkit-transition: -webkit-transform 0.3s;
 	transition: transform 0.3s;
@@ -58,7 +76,7 @@
 
 .grid figcaption p {
 	padding: 0 20px;
-	color: #BDF271;
+	color: #69BE28;
 	font-weight: 300;
 	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
 	transition: opacity 0.3s, transform 0.3s;
@@ -66,20 +84,10 @@
 .grid  figcaption h3,
 .grid figcaption h2,
 .grid figcaption p {
-	-webkit-transform: translateY(50px);
-	transform: translateY(50px);
+	-webkit-transform: translateY(20px);
+	transform: translateY(20px);
 }
 
-.grid figure button {
-	position: relative;
-	padding: 4px 20px;
-	border: none;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	font-weight: bold;
-	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
-	transition: opacity 0.3s, transform 0.3s;
-}
 
 .grid figcaption
 .grid  figcaption h3,
@@ -100,7 +108,7 @@
 }
 
 .grid svg path {
-	fill:;
+	fill: #443135;
 }
 
 /* Hover effects */
@@ -120,7 +128,7 @@
 
 /* Individual styles */
 .demo-1 body {
-	background: #2F2933 ;
+	background: #0094AD ;
 }
 
 .demo-1 .grid figure button,
@@ -161,7 +169,7 @@
 	padding: 15px;
 	width: 100%;
 	background: #fff;
-	color: #333;
+	color: #476C5E;
 	font-weight: 300;
 	-webkit-transform: translateY(100%);
 	transform: translateY(100%);
