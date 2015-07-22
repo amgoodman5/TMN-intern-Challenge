@@ -13,32 +13,34 @@
 }
 
 .grid a:nth-child(odd) {
-	margin: -40px 0 -30px 0;
+	margin: 50px 0 20px 0;
 }
 
 .grid figure {
 	position: relative;
 	overflow: hidden;
 	margin: 12px;
-    box-shadow: 3px 1px 9px #FFFFFF;
+    box-shadow: 2px 1px 9px #FFFFFF;*/
+    border: 1px solid transparent;
+    border-radius: 8px;
 }
-.img{
-    color: green;
-}
-h1{
-    font-family: 'Roboto', sans-serif;
+
+
+h1,h3{
+    font-family: 'Slabo 27px', serif;;
     margin: 0 0 20px 0;
-    color: #86F233;
-    text-transform: uppercase;
+    color: #00B588;
+
     letter-spacing: 1px;
     font-weight: 500;
-    font-size: 2em;
+    font-size: 3em;
     -webkit-transition: -webkit-transform 0.3s;
     transition: transform 0.3s;
-   text-shadow: 2px 5px 4px black;
+   text-shadow: 2px 2px 2px white;
 
 
 }
+
 .grid figure img {
 	position: relative;
 	display: block;
@@ -46,7 +48,7 @@ h1{
 	opacity: 0.7;
 	-webkit-transition: opacity 0.3s;
 	transition: opacity 0.3s;
-    box-shadow: 10px 10px 5px #888888;
+    box-shadow: 10px 10px 5px #888888;*/
 
 }
 
@@ -58,12 +60,13 @@ h1{
 	width: 100%;
 	height: 100%;
 	text-align: center;
-    box-shadow: 10px 10px 5px #85A5CC;
+    box-shadow: 10px 10px 5px #85A5CC;*/
+
 }
 
 .grid figcaption h2,h3{
     font-family: 'Roboto', sans-serif;
-	margin: 0 0 20px 0;
+	margin: 0 0 60px 0;
 	color: #00B588;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -71,6 +74,7 @@ h1{
 	font-size: 120%;
 	-webkit-transition: -webkit-transform 0.3s;
 	transition: transform 0.3s;
+
 }
 
 .grid figcaption p {
@@ -83,8 +87,8 @@ h1{
 .grid  figcaption h3,
 .grid figcaption h2,
 .grid figcaption p {
-	-webkit-transform: translateY(20px);
-	transform: translateY(20px);
+	-webkit-transform: translateY(60px);
+	transform: translateY(60px);
 }
 
 
@@ -107,7 +111,8 @@ h1{
 }
 
 .grid svg path {
-	fill: white;
+	fill: black;
+
 }
 
 /* Hover effects */
@@ -203,7 +208,7 @@ h1{
 /*button*/
 .btn-primary:hover {
     color: #fff;
-    background-color: ##00B588;
+    background-color: #00B588;
     border-color: #204d74;
 }
 .btn.focus, .btn:focus, .btn:hover {
@@ -232,7 +237,7 @@ a:active, a:hover {
 }
 .btn-primary {
     color: #fff;
-    background-color: green;
+    background-color: #00B588;
     border-color: #2e6da4;
 }
 .btn {

@@ -23,7 +23,7 @@ function data () {
 
             //   "Name"
             //swimming pool
-            $("#tags").append("<h3>" + tags[0].name + "</h3>");
+            $("#tags").append("<h2>" + tags[0].name + "</h2>");
 
             //counts
             $("#tags").append("<p>" +  "tags: " + tags[0].count  + "</p>");
