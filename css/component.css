@@ -20,12 +20,15 @@
 	position: relative;
 	overflow: hidden;
 	margin: 12px;
-    box-shadow: 2px 1px 9px #FFFFFF;*/
+    box-shadow: 2px 1px 9px #FFFFFF;
     border: 1px solid transparent;
     border-radius: 8px;
 }
 
-
+.h2, h2 {
+    font-size: 32px;
+    color:white;
+}
 h1,h3{
     font-family: 'Slabo 27px', serif;;
     margin: 0 0 20px 0;
@@ -66,7 +69,7 @@ h1,h3{
 
 .grid figcaption h2,h3{
     font-family: 'Roboto', sans-serif;
-	margin: 0 0 60px 0;
+	margin: 0 0 15px 0;
 	color: #00B588;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -114,6 +117,7 @@ h1,h3{
 	fill: black;
 
 }
+
 
 /* Hover effects */
 .grid a:hover figure img {
