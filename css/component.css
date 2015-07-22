@@ -27,16 +27,18 @@
 
 .h2, h2 {
     font-size: 32px;
-    color:white;
+    color: royalblue;
+
+
 }
 h1,h3{
     font-family: 'Slabo 27px', serif;;
     margin: 0 0 20px 0;
-    color: #00B588;
+    color: royalblue;
 
     letter-spacing: 1px;
     font-weight: 500;
-    font-size: 3em;
+    font-size: 4em;
     -webkit-transition: -webkit-transform 0.3s;
     transition: transform 0.3s;
    text-shadow: 2px 2px 2px white;
